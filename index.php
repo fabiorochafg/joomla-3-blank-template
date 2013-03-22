@@ -10,7 +10,7 @@ $doc -> addStyleSheet('templates/' . $this->template . '/css/main.css');
 $doc -> addScript('/templates/' . $this->template . '/js/main.js', 'text/javascript');
 $showLeftColumn = $this->countModules('left');
 $showRightColumn = $this->countModules('right');
-$classContent = 'nobar';
+$classContent = '';
 if ($option != 'com_search') {
     if ($showLeftColumn && $showRightColumn) {
         $classContent = 'bothbar';
@@ -66,7 +66,8 @@ if ($option != 'com_search') {
 
             <?php if($this->countModules('breadcrumbs')) : ?>
                 <div id="breadcrumbs">
-                    Você está em: <jdoc:include type="modules" name="breadcrumbs" style="none" />
+                    <p>Você está em:</p>
+                    <jdoc:include type="modules" name="breadcrumbs" style="none" />
                 </div>
             <?php endif; ?>
 

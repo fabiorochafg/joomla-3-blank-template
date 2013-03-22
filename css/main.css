@@ -81,6 +81,18 @@ ul {
 ul ul {
 	padding: 0 0 0 15px;
 }
+#breadcrumbs li {
+	float: left;
+	list-style: none;
+}
+#breadcrumbs p {
+	float: left;
+	margin: 0 5px 0 0;
+}
+#breadcrumbs ul.breadcrumbs {	
+	float: left;
+	padding: 0;
+}
 #content {
 	float: right;
 	padding: 1%;
@@ -99,9 +111,6 @@ ul ul {
 	clear: both;
 	text-align: center;
 }
-#header {
-	height: 100px;
-}
 #left {
 	float: left;	
 	padding: 1%;
@@ -110,34 +119,50 @@ ul ul {
 #main > div {
 	min-height: 400px;
 }
+#menu {
+	float: left;
+	height: 40px;
+	margin: 30px 0 30px 100px;
+}
 #menu li {
+	height: 40px;
+	line-height: 40px;
 	list-style: none;
+	margin: 0 20px 0 0;
 }
 #search {
 	clear: right;
 	float: right;
-	margin: 20px 0 0;
+	margin: 10px 0 0;
 	width: 165px;
 }
-#search form {
-	margin: 0;
-}
-#search input[type="text"] {
-	height: 25px;
-	margin: 6px 0 0;
-	text-indent: 3px;
-	width: 128px;
-}
-#search input[type="submit"] {
+#search button {
 	clear: none;
 	float: left;
 	height: 27px;
 	margin: 6px 0 0;
 	padding: 0 0 3px;
-	width: 30px;
+	width: 40px;
+}
+#search form {
+	margin: 0;
+}
+#search input[type="text"] {
+	border: 1px solid #ddd;
+	font-size: 95%;
+	height: 25px;
+	margin: 6px 0 0;
+	text-indent: 3px;
+	width: 117px;
 }
 .container {
 	margin: 0 auto;
 	max-width: 1200px; 
 	min-width: 1000px;
+}
+.element-invisible {
+	display: block;
+	height: 0;
+	text-indent: -9000px;
+	width: 0;
 }

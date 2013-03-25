@@ -7,10 +7,10 @@ Default positions:
 ------------------
 
 * breadcrumbs
-* content
+* content (Displays any content on the main area, below component content)
 * debug
 * footer
-* left
-* menu
-* right
-* search
+* left (A left content sidebar)
+* menu (Displays any menu on top)
+* right (A right content sidebar)
+* search (Displays the search form on top)

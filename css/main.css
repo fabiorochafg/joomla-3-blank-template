@@ -43,7 +43,7 @@ input[type="text"] {
 	clear: left;
 	float: left;
 	margin: 0 0 18px;
-	padding: 0 3px;
+	padding: 0 1%;
 	height: 24px;
 }
 label {
@@ -107,7 +107,8 @@ ul ul {
 	text-align: justify;
 }
 #content.bothbar {
-	float: left;
+	display: inline-block;
+	float: none;
 	width: 56%;
 }
 #content.leftbar,
@@ -120,10 +121,19 @@ ul ul {
 #footer {
 	text-align: center;
 }
-#left {
-	float: left;	
+#left,
+#right {
 	padding: 1%;
 	width: 19%;
+}
+#left {
+	float: left;
+}
+#left input[type="password"],
+#left input[type="text"],
+#right input[type="password"],
+#right input[type="text"] {
+	width: 98%;
 }
 #main > div {
 	min-height: 400px;
@@ -142,8 +152,6 @@ ul ul {
 }
 #right {
 	float: right;
-	padding: 1%;
-	width: 19%;
 }
 #search {
 	clear: right;
@@ -179,6 +187,49 @@ ul ul {
 .element-invisible {
 	display: block;
 	height: 0;
+	margin: 0;
+    padding: 0;
 	text-indent: -9000px;
 	width: 0;
+}
+
+
+/* Media-queries */
+@media only screen and (max-device-width: 480px), only screen and (min-device-width: 481px) and (max-device-width: 991px) and (orientation:portrait), only screen and (min-device-width: 481px) and (max-device-width: 991px) and (orientation:landscape) {
+	#content,
+	#left,
+	#right {
+		float: none;
+		width: 98%;
+	}
+	#main > div {
+		min-height: 40px;
+	}
+	#menu {
+		display: inline-block;
+		margin: 10px 0;
+		width: 100%;
+	}
+	.container {
+		max-width: 95%;
+		min-width: 95%;
+	}
+}
+@media only screen and (max-device-width: 480px) {
+
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 991px) and (orientation:portrait), only screen and (min-device-width: 481px) and (max-device-width: 991px) and (orientation:landscape) {
+
+}
+@media screen and (min-width: 1440px) {
+
+}
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 940px) {
+	.container {
+		max-width: 95%;
+		min-width: 95%;
+	}
 }

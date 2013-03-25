@@ -54,13 +54,7 @@ if ($option != 'com_search') {
 
     </div>
 
-    <div id="main" class="container">
-
-        <?php if ($option != 'com_search' && $this->countModules('left')) : ?>
-            <div id="left">
-                <jdoc:include type="modules" name="left" style="xhtml" />
-            </div>
-        <?php endif; ?>
+    <div id="main" class="container">        
 
         <div id="content" class="<?php echo $classContent; ?>">
 
@@ -82,6 +76,12 @@ if ($option != 'com_search') {
             <?php endif; ?>
 
         </div>
+
+        <?php if ($option != 'com_search' && $this->countModules('left')) : ?>
+            <div id="left">
+                <jdoc:include type="modules" name="left" style="xhtml" />
+            </div>
+        <?php endif; ?>
 
         <?php if ($option != 'com_search' && $this->countModules('right')) : ?>
             <div id="right">

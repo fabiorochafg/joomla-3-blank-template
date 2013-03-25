@@ -66,7 +66,7 @@ if ($option != 'com_search') {
 
             <?php if($this->countModules('breadcrumbs')) : ?>
                 <div id="breadcrumbs">
-                    <p>Você está em:</p>
+                    <p>You are in:</p>
                     <jdoc:include type="modules" name="breadcrumbs" style="none" />
                 </div>
             <?php endif; ?>

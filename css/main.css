@@ -23,6 +23,9 @@ h1 a {
 	float: left;
 	padding: 0;
 }
+#breadcrumbs .divider {
+	padding: 0 3px;
+}
 #content {
 	float: right;
 	padding: 1%;
@@ -125,6 +128,20 @@ h1 a {
 	width: 0;
 }
 
+/* Joomla Structure */
+dl.article-info {
+	color: #666666;
+    font-size: 90%;
+	padding: 0 0 20px;
+}
+ul.actions {
+	float: right;
+}
+ul.actions li {
+	float: left;
+	list-style: none;
+	margin: 0 0 0 8px;
+}
 
 /* Media-queries */
 @media only screen and (max-device-width: 480px), only screen and (min-device-width: 481px) and (max-device-width: 991px) and (orientation:portrait), only screen and (min-device-width: 481px) and (max-device-width: 991px) and (orientation:landscape) {

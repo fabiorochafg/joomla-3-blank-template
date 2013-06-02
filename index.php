@@ -98,7 +98,7 @@ if ($option != 'com_search') {
             <jdoc:include type="modules" name="footer" style="none" />
         <?php endif; ?>
 
-        <?php echo '&copy;' . date('Y') . ' A blank Template for Joomla 3.0'; ?>
+        <?php echo 'Joomla 3.0 Blank Template - Developed by Fabio Rocha (<a href="https://github.com/fabiorochafg">https://github.com/fabiorochafg</a> | <a href="mailto:fabiorochafg@gmail.com">fabiorochafg@gmail.com</a>)'; ?>
 
     </div>
 

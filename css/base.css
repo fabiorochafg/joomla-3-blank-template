@@ -34,12 +34,12 @@ code {
     padding: 0 3px;
 }
 dd {
-    float: left;
-    font-weight: bold;
+    padding: 0 0 2px;
 }
 dt {
     clear: left;
     float: left;
+    font-weight: bold;
     margin: 0 5px 0 0;
 }
 fieldset {
@@ -59,7 +59,7 @@ h1 {
     margin: 10px 0;
 }
 h2 {
-    padding: 0;
+    padding: 10px 0;
 }
 input[type="file"],
 input[type="password"],

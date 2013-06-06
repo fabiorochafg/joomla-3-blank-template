@@ -3,6 +3,13 @@ joomla-3-blank-template
 
 A blank template for Joomla 3.0.
 
+Installation:
+-------------
+
+Put the files in the "templates" folder, in your Joomla site directory.
+Then, access the administration area and install the template in the Template Manager menu.
+
+
 Default positions:
 ------------------
 

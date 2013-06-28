@@ -142,6 +142,10 @@ ul.actions li {
 	list-style: none;
 	margin: 0 0 0 8px;
 }
+#system-message-container .close {
+	cursor: pointer;
+	float: right;
+}
 
 /* Media-queries */
 @media only screen and (max-device-width: 480px), only screen and (min-device-width: 481px) and (max-device-width: 991px) and (orientation:portrait), only screen and (min-device-width: 481px) and (max-device-width: 991px) and (orientation:landscape) {

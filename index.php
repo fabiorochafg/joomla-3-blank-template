@@ -6,7 +6,6 @@ $doc = JFactory::getDocument();
 $menu = JSite::getMenu();
 $option = JRequest::GetWord('option');
 
-$doc -> addStyleSheet('templates/' . $this->template . '/css/base.css');
 $doc -> addStyleSheet('templates/' . $this->template . '/css/main.css');
 $doc -> addScript('/templates/' . $this->template . '/js/main.js', 'text/javascript');
 $showLeftColumn = $this->countModules('left');

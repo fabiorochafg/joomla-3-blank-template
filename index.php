@@ -7,7 +7,7 @@ $menu = JSite::getMenu();
 $option = JRequest::GetWord('option');
 
 $doc -> addStyleSheet('templates/' . $this->template . '/css/main.css');
-$doc -> addScript('/templates/' . $this->template . '/js/main.js', 'text/javascript');
+$doc -> addScript('templates/' . $this->template . '/js/main.js', 'text/javascript');
 $showLeftColumn = $this->countModules('left');
 $showRightColumn = $this->countModules('right');
 $classContent = '';

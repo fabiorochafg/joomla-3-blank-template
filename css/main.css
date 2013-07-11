@@ -72,9 +72,9 @@ input[type="file"],
 input[type="password"],
 input[type="text"] {
     border: 1px solid #DDDDDD;
+    height: 24px;
     margin: 0 0 18px;
     padding: 0 1%;
-    height: 24px;
 }
 input[type="password"]:focus,
 input[type="text"]:focus,
@@ -186,7 +186,7 @@ ul ul {
 }
 #menu {
 	float: right;
-	height: 40px;
+	height: 101px;
 	margin: 0 0 0 100px;
 }
 #menu li {

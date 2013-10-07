@@ -1,7 +1,8 @@
 joomla-3-blank-template
 =======================
 
-A blank template for Joomla 3.0.
+A blank template for Joomla 3.0. Use it for build your own Joomla template!
+
 
 Installation:
 -------------

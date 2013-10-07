@@ -131,7 +131,7 @@ ul ul {
 	float: left;
 	margin: 0 5px 0 0;
 }
-#breadcrumbs ul.breadcrumbs {	
+#breadcrumbs ul.breadcrumb {	
 	float: left;
 	padding: 0;
 }
@@ -189,25 +189,25 @@ ul ul {
 	height: 101px;
 	margin: 0 0 0 100px;
 }
-#menu li {
-	float: left;
-	height: 100px;
-	line-height: 100px;
-	list-style: none;
-	margin: 0 0 0 30px;
-}
-#menu li a {
+#menu a {
     border-bottom: 1px solid #333333;
     color: #333333;
     display: block;
     font-size: 150%;
     font-weight: bold;
+    height: 100px;
+	line-height: 100px;
     text-decoration: none;
 }
-#menu li a:hover,
-#menu li.active a {
+#menu a:hover,
+#menu .active a {
     border-bottom: 1px solid #999999;
     color: #999999;
+}
+#menu li {
+	float: left;
+	list-style: none;
+	margin: 0 0 0 30px;
 }
 #right {
 	float: right;
@@ -272,8 +272,34 @@ ul.actions li {
 	cursor: pointer;
 	float: right;
 }
+.page-header {
+	display: inline-block;
+	width: 100%;
+}
 
 /* Media-queries */
+@media print {  
+    * {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    body {
+        color: #000000;
+        font: 9pt serif;
+    }
+    a:link, a:visited {
+        color: #333333;
+        text-decoration: none;
+    }
+    h1,
+    #footer,
+    #menu {
+        display: none !important;
+    }
+    table {
+        font: 8pt serif;
+    }
+}
 @media only screen and (max-device-width: 480px), only screen and (min-device-width: 481px) and (max-device-width: 991px) and (orientation:portrait), only screen and (min-device-width: 481px) and (max-device-width: 991px) and (orientation:landscape) {
 	#content,
 	#left,
@@ -284,11 +310,6 @@ ul.actions li {
 	#main > div {
 		min-height: 40px;
 	}
-	#menu {
-		display: inline-block;
-		margin: 10px 0;
-		width: 100%;
-	}
 	.container {
 		max-width: 95%;
 		min-width: 95%;
@@ -297,7 +318,7 @@ ul.actions li {
 @media only screen and (max-device-width: 480px) {
 
 }
-@media only screen and (min-device-width: 481px) and (max-device-width: 991px) and (orientation:portrait), only screen and (min-device-width: 481px) and (max-device-width: 991px) and (orientation:landscape) {
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait), only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
 
 }
 @media screen and (min-width: 1440px) {
@@ -307,6 +328,31 @@ ul.actions li {
 
 }
 @media screen and (max-width: 940px) {
+	h1 {
+        float: left;
+        margin: 0;
+        width: 100%;
+    }
+    h1 a {
+        background: url(../images/logo.png) no-repeat center 0;
+        width: 100%;
+    }
+    #menu {
+        display: inline-block;
+        float: none;
+        margin: 0;
+        width: 100%;
+    }
+    #menu a {
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+    }
+    #menu li {
+    	float: none;
+        margin: 0;
+        width: 100%;
+    }
 	.container {
 		max-width: 95%;
 		min-width: 95%;

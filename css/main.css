@@ -54,6 +54,9 @@ fieldset {
 form {
     margin: 10px 0;
 }
+footer {
+    text-align: center;
+}
 h1 {
     float: left;
     margin: 10px 0;
@@ -85,6 +88,34 @@ textarea:focus {
 label {
     margin: 0 0 2px;
     padding: 0 2px 0 0;
+}
+nav {
+    float: right;
+    height: 101px;
+    margin: 0 0 0 100px;
+}
+nav a {
+    border-bottom: 1px solid #333333;
+    color: #333333;
+    display: block;
+    font-size: 150%;
+    font-weight: bold;
+    height: 100px;
+    line-height: 100px;
+    text-decoration: none;
+}
+nav a:hover,
+nav .active a {
+    border-bottom: 1px solid #999999;
+    color: #999999;
+}
+nav li {
+    float: left;
+    list-style: none;
+    margin: 0 0 0 30px;
+}
+section > div {
+    min-height: 400px;
 }
 select {
     border: 1px solid #DDDDDD;
@@ -164,9 +195,6 @@ ul ul {
 #content.rightbar {
 	float: left;
 }
-#footer {
-	text-align: center;
-}
 #left,
 #right {
 	padding: 1%;
@@ -180,34 +208,6 @@ ul ul {
 #right input[type="password"],
 #right input[type="text"] {
 	width: 98%;
-}
-#main > div {
-	min-height: 400px;
-}
-#menu {
-	float: right;
-	height: 101px;
-	margin: 0 0 0 100px;
-}
-#menu a {
-    border-bottom: 1px solid #333333;
-    color: #333333;
-    display: block;
-    font-size: 150%;
-    font-weight: bold;
-    height: 100px;
-	line-height: 100px;
-    text-decoration: none;
-}
-#menu a:hover,
-#menu .active a {
-    border-bottom: 1px solid #999999;
-    color: #999999;
-}
-#menu li {
-	float: left;
-	list-style: none;
-	margin: 0 0 0 30px;
 }
 #right {
 	float: right;
@@ -291,9 +291,9 @@ ul.actions li {
         color: #333333;
         text-decoration: none;
     }
+    footer,
     h1,
-    #footer,
-    #menu {
+    nav {
         display: none !important;
     }
     table {
@@ -307,7 +307,7 @@ ul.actions li {
 		float: none;
 		width: 98%;
 	}
-	#main > div {
+	section > div {
 		min-height: 40px;
 	}
 	.container {
@@ -337,18 +337,18 @@ ul.actions li {
         background: url(../images/logo.png) no-repeat center 0;
         width: 100%;
     }
-    #menu {
+    nav {
         display: inline-block;
         float: none;
         margin: 0;
         width: 100%;
     }
-    #menu a {
+    nav a {
         height: 50px;
         line-height: 50px;
         text-align: center;
     }
-    #menu li {
+    nav li {
     	float: none;
         margin: 0;
         width: 100%;

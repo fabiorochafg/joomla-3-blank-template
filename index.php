@@ -36,7 +36,7 @@ if ($option != 'com_search') {
     <body>
 <?php } ?>
 
-    <div id="header" class="container">
+    <header class="container">
 
         <h1>
             <a href="<?php echo $this->baseurl; ?>"><?php echo $app->getCfg('sitename'); ?></a>
@@ -49,14 +49,14 @@ if ($option != 'com_search') {
         <?php endif; ?>
 
         <?php if ($this->countModules('menu')) : ?>
-            <div id="menu">
+            <nav>
                 <jdoc:include type="modules" name="menu" style="none" />
-            </div>
+            </nav>
         <?php endif; ?>
 
-    </div>
+    </header>
 
-    <div id="main" class="container">        
+    <section class="container">        
 
         <div id="content" class="<?php echo $classContent; ?>">
 
@@ -91,9 +91,9 @@ if ($option != 'com_search') {
             </div>
         <?php endif; ?>
 
-    </div>
+    </section>
 
-    <div id="footer" class="container">
+    <footer class="container">
 
         <?php if($this->countModules('footer')) : ?>
             <jdoc:include type="modules" name="footer" style="none" />
@@ -101,7 +101,7 @@ if ($option != 'com_search') {
 
         <?php echo 'Joomla 3.0 Blank Template - Developed by Fabio Rocha (<a href="https://github.com/fabiorochafg">https://github.com/fabiorochafg</a> | <a href="mailto:fabiorochafg@gmail.com">fabiorochafg@gmail.com</a>)'; ?>
 
-    </div>
+    </footer>
 
     <jdoc:include type="modules" name="debug" style="none" />
 

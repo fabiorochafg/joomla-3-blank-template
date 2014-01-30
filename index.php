@@ -22,10 +22,9 @@ if ($option != 'com_search') {
 }
 ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
+<html lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta content="Joomla 3 Blank Template" name="description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/templates/<?php echo $this->template; ?>/favicon.ico" type="image/x-icon" />
     <jdoc:include type="head" />
 </head>

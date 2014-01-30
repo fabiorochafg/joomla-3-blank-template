@@ -264,9 +264,24 @@ ul.actions {
 	float: right;
 }
 ul.actions li {
-	float: left;
-	list-style: none;
-	margin: 0 0 0 8px;
+    float: left;
+    list-style: none;
+    margin: 0 0 0 8px;
+}
+ul.actions li a {
+    display: block;
+    height: 16px;
+    text-indent: -9000px;
+    width: 16px;
+}
+ul.actions li:hover a {
+    opacity: 0.6;
+}
+ul.actions li.email-icon a {
+    background: url(../images/icon-email.png) 0 0 no-repeat;
+}
+ul.actions li.print-icon a {
+    background: url(../images/icon-print.png) 0 0 no-repeat;
 }
 #system-message-container .close {
 	cursor: pointer;

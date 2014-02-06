@@ -71,6 +71,7 @@ h1 a {
 h2 {
     padding: 10px 0;
 }
+input[type="email"],
 input[type="file"],
 input[type="password"],
 input[type="text"] {
@@ -79,6 +80,7 @@ input[type="text"] {
     margin: 0 0 18px;
     padding: 0 1%;
 }
+input[type="email"]:focus,
 input[type="password"]:focus,
 input[type="text"]:focus,
 select:focus,
@@ -290,6 +292,17 @@ ul.actions li.print-icon a {
 .page-header {
 	display: inline-block;
 	width: 100%;
+}
+.tip-title {
+    font-weight: bold;
+}
+.tip-wrap {
+    background: #FEF8CF;
+    border: 1px solid #EEEEEE;
+    border-radius: 3px;
+    color: #555555;
+    font-size: 95%;
+    padding: 6px 10px;
 }
 
 /* Media-queries */

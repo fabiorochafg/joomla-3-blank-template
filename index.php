@@ -98,7 +98,8 @@ if ($option != 'com_search') {
             <jdoc:include type="modules" name="footer" style="none" />
         <?php endif; ?>
 
-        <?php echo 'Joomla 3.0 Blank Template - Developed by Fabio Rocha (<a href="https://github.com/fabiorochafg">https://github.com/fabiorochafg</a> | <a href="mailto:fabiorochafg@gmail.com">fabiorochafg@gmail.com</a>)'; ?>
+        <?php echo '<p>Joomla 3.0 Blank Template</p>
+        <p>Developed by Fabio Rocha (<a href="http://fabiorochafg.github.io">http://fabiorochafg.github.io</a> | <a href="fabiorochafg@gmail.com">fabiorochafg@gmail.com</a>)</p>'; ?>
 
     </footer>
 

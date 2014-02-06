@@ -285,9 +285,19 @@ ul.actions li.email-icon a {
 ul.actions li.print-icon a {
     background: url(../images/icon-print.png) 0 0 no-repeat;
 }
+#system-message-container .alert p {
+    margin: 0 0 5px;
+    padding: 5px 10px;
+}
+#system-message-container .alert.alert-error p {
+    background: #FFDDDD;
+}
+#system-message-container .alert.alert-notice p {
+    background: #BFDDF2;
+}
 #system-message-container .close {
-	cursor: pointer;
-	float: right;
+    cursor: pointer;
+    float: right;
 }
 .page-header {
 	display: inline-block;

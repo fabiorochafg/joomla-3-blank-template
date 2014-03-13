@@ -303,6 +303,14 @@ ul.actions li.print-icon a {
 	display: inline-block;
 	width: 100%;
 }
+.pagination {
+    font-size: 95%;
+    padding: 20px 0 0;
+}
+.pagination li {
+    float: left;
+    list-style: none;
+}
 .tip-title {
     font-weight: bold;
 }

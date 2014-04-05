@@ -6,7 +6,15 @@
     outline: 0 none;
     padding: 0;
 }
-a, a:link, a:active {
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a,
+a:active {
     color: #666666;
 }
 a:hover {
@@ -14,6 +22,7 @@ a:hover {
     text-decoration: underline;
 }
 body {
+    background: #000000;
     font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
     font-size: 69%;
 }
@@ -34,6 +43,7 @@ code {
     padding: 0 3px;
 }
 dd {
+    float: left;
     padding: 0 0 2px;
 }
 dt {
@@ -54,8 +64,18 @@ fieldset {
 form {
     margin: 10px 0;
 }
-footer {
-    text-align: center;
+footer,
+footer a {
+    color: #999999;
+}
+footer a:hover {
+    color: #cccccc;
+}
+footer > a {
+    float: right;
+}
+footer dl {
+    float: left;
 }
 h1 {
     float: left;
@@ -70,6 +90,15 @@ h1 a {
 }
 h2 {
     padding: 10px 0;
+}
+h3,
+h4,
+h5 {
+    padding: 20px 0 10px;
+}
+header,
+section {
+    background: #ffffff;
 }
 input[type="email"],
 input[type="file"],
@@ -115,6 +144,10 @@ nav li {
     float: left;
     list-style: none;
     margin: 0 0 0 30px;
+}
+p {
+    line-height: 1.5em;
+    padding: 0 0 5px;
 }
 section > div {
     min-height: 400px;
@@ -243,9 +276,9 @@ ul ul {
 .container {
 	clear: both;
 	margin: 0 auto;
-	max-width: 1200px; 
-	min-width: 1000px;
 	overflow: hidden;
+    padding: 3%;
+    width: 100%;
 }
 .element-invisible {
 	display: block;

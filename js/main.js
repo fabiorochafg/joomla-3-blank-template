@@ -7,4 +7,6 @@ jQuery(document).ready(function() {
 		return false;
 	});
 
+	jQuery('.btn-toolbar button').html("Buscar");
+
 });

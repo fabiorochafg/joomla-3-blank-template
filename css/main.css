@@ -15,14 +15,14 @@
 }
 a,
 a:active {
-    color: #666666;
+    color: #666;
 }
 a:hover {
-    color: #333333;
+    color: #333;
     text-decoration: underline;
 }
 body {
-    background: #000000;
+    background: #fff;
     font-family: "Lucida Grande", Verdana, Lucida, Helvetica, Arial, sans-serif;
     font-size: 69%;
 }
@@ -35,10 +35,11 @@ input[type="submit"] {
     font-size: 100%;
     height: 26px;
     padding: 0 5px;
+    -webkit-appearance: none;
 }
 code {
     background: #F8F8F8;
-    border: 1px solid #DDDDDD;
+    border: 1px solid #DDD;
     border-radius: 5px;
     padding: 0 3px;
 }
@@ -54,7 +55,7 @@ dt {
 }
 fieldset {
     background: #F8F8F8;
-    border: 1px solid #DDDDDD;
+    border: 1px solid #DDD;
     border-radius: 5px;
     clear: both;
     display: table;
@@ -66,10 +67,10 @@ form {
 }
 footer,
 footer a {
-    color: #999999;
+    color: #999;
 }
 footer a:hover {
-    color: #cccccc;
+    color: #ccc;
 }
 footer > a {
     float: right;
@@ -96,20 +97,19 @@ h4,
 h5 {
     padding: 20px 0 10px;
 }
-header,
-section {
-    background: #ffffff;
-}
 input[type="email"],
 input[type="file"],
+input[type="number"],
 input[type="password"],
 input[type="text"] {
     border: 1px solid #DDDDDD;
-    height: 24px;
+    height: 30px;
     margin: 0 0 18px;
-    padding: 0 1%;
+    padding: 0 5px;
 }
 input[type="email"]:focus,
+input[type="file"]:focus,
+input[type="number"]:focus,
 input[type="password"]:focus,
 input[type="text"]:focus,
 select:focus,
@@ -174,10 +174,12 @@ td, th {
     padding: 5px;
 }
 textarea {
-    border: 1px solid #DDDDDD;
+    border: 1px solid #DDD;
+    font-size: 100%;
     height: 130px;
     margin: 1px 0 5px;
-    width: 480px;   
+    padding: 0 5px;
+    width: 480px;
 }
 ul {
     line-height: 1.5em;
@@ -207,7 +209,7 @@ ul ul {
 #content {
 	float: right;
 	padding: 1%;
-	width: 98%;
+	width: 100%;
 }
 #content ol,
 #content ul {
@@ -295,6 +297,9 @@ dl.article-info {
     font-size: 90%;
 	padding: 0 0 20px;
 }
+h1.page-title {
+    width: 100%;
+}
 ul.actions {
 	float: right;
 }
@@ -332,6 +337,9 @@ ul.actions li.print-icon a {
     cursor: pointer;
     float: right;
 }
+.btn-toolbar > div {
+    float: left;
+}
 .page-header {
 	display: inline-block;
 	width: 100%;
@@ -343,6 +351,9 @@ ul.actions li.print-icon a {
 .pagination li {
     float: left;
     list-style: none;
+}
+.searchintro {
+    clear: both;
 }
 .tip-title {
     font-weight: bold;

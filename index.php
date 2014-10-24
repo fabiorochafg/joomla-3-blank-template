@@ -25,7 +25,6 @@ if ($option != 'com_search') {
 <html lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" href="/templates/<?php echo $this->template; ?>/favicon.ico" type="image/x-icon" />
 <jdoc:include type="head" />
 </head>
 

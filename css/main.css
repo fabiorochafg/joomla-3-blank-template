@@ -390,27 +390,6 @@ ul.actions li.print-icon a {
         font: 8pt serif;
     }
 }
-@media only screen and (max-device-width: 480px), only screen and (min-device-width: 481px) and (max-device-width: 991px) and (orientation:portrait), only screen and (min-device-width: 481px) and (max-device-width: 991px) and (orientation:landscape) {
-	#content,
-	#left,
-	#right {
-		float: none;
-		width: 98%;
-	}
-	section > div {
-		min-height: 40px;
-	}
-	.container {
-		max-width: 95%;
-		min-width: 95%;
-	}
-}
-@media only screen and (max-device-width: 480px) {
-
-}
-@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait), only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-
-}
 @media screen and (min-width: 1440px) {
 
 }
@@ -447,4 +426,25 @@ ul.actions li.print-icon a {
 		max-width: 95%;
 		min-width: 95%;
 	}
+}
+@media only screen and (max-device-width: 480px), only screen and (min-device-width: 481px) and (max-device-width: 991px) and (orientation:portrait), only screen and (min-device-width: 481px) and (max-device-width: 991px) and (orientation:landscape) {
+    #content,
+    #left,
+    #right {
+        float: none;
+        width: 98%;
+    }
+    section > div {
+        min-height: 40px;
+    }
+    .container {
+        max-width: 95%;
+        min-width: 95%;
+    }
+}
+@media only screen and (max-device-width: 480px) {
+
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait), only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+
 }

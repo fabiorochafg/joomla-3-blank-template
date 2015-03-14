@@ -3,7 +3,7 @@ defined('_JEXEC') or die;
 
 $app = JFactory::getApplication();
 $doc = JFactory::getDocument();
-$menu = JSite::getMenu();
+$menu = $app->getMenu();
 $option = JRequest::GetWord('option');
 
 $doc -> addStyleSheet('templates/' . $this->template . '/css/main.css');

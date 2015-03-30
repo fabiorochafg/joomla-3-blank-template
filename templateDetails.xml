@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
 <extension version="3.0" type="template" client="site">
-	<name>Blank Template 2013</name>
+	<name>Blank Template</name>
 	<version>1.0</version>
 	<creationDate>21 March 2013</creationDate>
 	<author>Fabio Rocha</author>
-	<authorEmail>fabiorochafg@gmail.com</authorEmail>
-	<authorUrl>http://fabiorochafg.github.io</authorUrl>
+	<authorEmail>contato@solutibrasil.com.br</authorEmail>
+	<authorUrl>http://solutibrasil.com.br</authorUrl>
 	<copyright>Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.</copyright>
-	<description>Blank Template for Joomla 3.0</description>
+	<description>Blank Template for Joomla 3.*</description>
 
 	<files>
 		<folder>css</folder>

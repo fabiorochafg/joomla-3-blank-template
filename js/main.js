@@ -1,4 +1,4 @@
-/* JS Document - Developed by Fabio Rocha (https://github.com/fabiorochafg | fabiorochafg@gmail.com) */
+/* JS Document - Developed by Fabio Rocha (http://solutibrasil.com.br | contato@solutibrasil.com.br) */
 
 jQuery(document).ready(function() {
 

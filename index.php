@@ -105,13 +105,13 @@ if ($option != 'com_search') {
 
     <?php echo '<dl>
         <dt>Template</dt>
-        <dd>Joomla 3 Blank Template</dd>
+        <dd>Joomla Blank Template</dd>
         <dt>Developed by</dt>
-        <dd>Fabio Rocha Ferreira Gomes</dd>
+        <dd>Fábio Rocha</dd>
         <dt>Site</dt>
-        <dd><a href="http://fabiorochafg.github.io">http://fabiorochafg.github.io</a></dd>
+        <dd><a href="http://solutibrasil.com.br">http://solutibrasil.com.br</a></dd>
         <dt>E-mail</dt>
-        <dd><a href="fabiorochafg@gmail.com">fabiorochafg@gmail.com</a></dd>
+        <dd><a href="contato@solutibrasil.com.br">contato@solutibrasil.com.br</a></dd>
     </dl>
     <a href="#" id="top-of-the-page">Top of the page</a>'; ?>
 

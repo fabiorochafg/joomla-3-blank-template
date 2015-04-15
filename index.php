@@ -56,7 +56,7 @@ if ($option != 'com_search') {
 
 <section class="container">        
 
-    <div id="content" class="<?php echo $classContent; ?>">
+    <article class="<?php echo $classContent; ?>">
 
         <?php if($this->countModules('breadcrumbs')) : ?>
             <div id="breadcrumbs">
@@ -75,18 +75,18 @@ if ($option != 'com_search') {
             <jdoc:include type="modules" name="content" style="xhtml" />
         <?php endif; ?>
 
-    </div>
+    </article>
 
     <?php if ($option != 'com_search' && $this->countModules('left')) : ?>
-        <div id="left">
+        <aside class="left">
             <jdoc:include type="modules" name="left" style="xhtml" />
-        </div>
+        </aside>
     <?php endif; ?>
 
     <?php if ($option != 'com_search' && $this->countModules('right')) : ?>
-        <div id="right">
+        <aside class="right">
             <jdoc:include type="modules" name="right" style="xhtml" />
-        </div>
+        </aside>
     <?php endif; ?>
 
 </section>
@@ -103,9 +103,9 @@ if ($option != 'com_search') {
         <dt>Developed by</dt>
         <dd><a href="http://solutibrasil.com.br">http://solutibrasil.com.br</a></dd>
         <dt>E-mail</dt>
-        <dd><a href="contato@solutibrasil.com.br">contato@solutibrasil.com.br</a></dd>
+        <dd><a href="mailto:contato@solutibrasil.com.br">contato@solutibrasil.com.br</a></dd>
     </dl>
-    <a href="#" id="top-of-the-page">Top of the page</a>'; ?>
+    <a href="#" id="go-to-top">Go to Top</a>'; ?>
 
 </footer>
 

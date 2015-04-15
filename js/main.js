@@ -2,7 +2,7 @@
 
 jQuery(document).ready(function() {
 
-	jQuery("#top-of-the-page").click(function(){
+	jQuery("#go-to-top").click(function(){
 		jQuery('html, body').animate({scrollTop:0}, 'slow');
 		return false;
 	});

@@ -102,7 +102,7 @@ input[type="file"],
 input[type="number"],
 input[type="password"],
 input[type="text"] {
-    border: 1px solid #DDDDDD;
+    border: 1px solid #ddd;
     height: 30px;
     margin: 0 0 18px;
     padding: 0 5px;
@@ -114,7 +114,7 @@ input[type="password"]:focus,
 input[type="text"]:focus,
 select:focus,
 textarea:focus {
-    border: 1px solid #AAAAAA;
+    border: 1px solid #aaa;
 }
 label {
     margin: 0 0 2px;
@@ -126,8 +126,8 @@ nav {
     margin: 0 0 0 100px;
 }
 nav a {
-    border-bottom: 1px solid #333333;
-    color: #333333;
+    border-bottom: 1px solid #333;
+    color: #333;
     display: block;
     font-size: 150%;
     font-weight: bold;
@@ -137,8 +137,8 @@ nav a {
 }
 nav a:hover,
 nav .active a {
-    border-bottom: 1px solid #999999;
-    color: #999999;
+    border-bottom: 1px solid #999;
+    color: #999;
 }
 nav li {
     float: left;
@@ -153,7 +153,7 @@ section > div {
     min-height: 400px;
 }
 select {
-    border: 1px solid #DDDDDD;
+    border: 1px solid #ddd;
     height: 24px;
     margin: 0 0 18px;
 }
@@ -174,7 +174,7 @@ td, th {
     padding: 5px;
 }
 textarea {
-    border: 1px solid #DDD;
+    border: 1px solid #ddd;
     font-size: 100%;
     height: 130px;
     margin: 1px 0 5px;
@@ -293,7 +293,7 @@ ul ul {
 
 /* Joomla Structure */
 dl.article-info {
-	color: #666666;
+	color: #666;
     font-size: 90%;
 	padding: 0 0 20px;
 }
@@ -360,9 +360,9 @@ ul.actions li.print-icon a {
 }
 .tip-wrap {
     background: #FEF8CF;
-    border: 1px solid #EEEEEE;
+    border: 1px solid #eee;
     border-radius: 3px;
-    color: #555555;
+    color: #555;
     font-size: 95%;
     padding: 6px 10px;
 }
@@ -446,5 +446,29 @@ ul.actions li.print-icon a {
 
 }
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait), only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+
+}
+
+
+
+/* iPhone */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* iPad */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+}
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
 
 }

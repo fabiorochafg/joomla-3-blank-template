@@ -91,12 +91,6 @@ if ($option != 'com_search') {
 
 </section>
 
-<section class="container"> 
-    <h2>Lorem Ipsum</h2>
-    <p>Eiiitaaa Mainhaaa!! Esse Lorem ipsum é só na sacanageeem!! E que abundância meu irmão viuu!! Assim você vai matar o papai. Só digo uma coisa, Domingo ela não vai! Danadaa!! Vem minha odalisca, agora faz essa cobra coral subir!!! Pau que nasce torto, Nunca se endireita. Tchannn!! Tchannn!! Tu du du pááá! Eu gostchu muitchu, heinn! danadinha! Mainhaa! Agora use meu lorem ipsum ordinária!!! Olha o quibeee! rema, rema, ordinária!.</p>
-    <p>Você usa o Lorem Ipsum tradicional? Sabe de nada inocente!! Conheça meu lorem que é Tchan, Tchan, Tchannn!! Txu Txu Tu Paaaaa!! Vem, vem ordinária!! Venha provar do meu dendê que você não vai se arrepender. Só na sacanageeem!! Eu gostchu muitchu, heinn! Eitchaaa template cheio de abundância danadaaa!! Assim você mata o papai hein!? Etâaaa Mainhaaaaa...me abusa nesse seu layout, me gera, me geraaaa ordinária!!! Só na sacanagem!!!! Venha provar do meu dendê Tu du du pááá!.</p>
-</section>
-
 <footer class="container">
 
     <?php if($this->countModules('footer')) : ?>
@@ -107,8 +101,6 @@ if ($option != 'com_search') {
         <dt>Template</dt>
         <dd>Joomla Blank Template</dd>
         <dt>Developed by</dt>
-        <dd>Fábio Rocha</dd>
-        <dt>Site</dt>
         <dd><a href="http://solutibrasil.com.br">http://solutibrasil.com.br</a></dd>
         <dt>E-mail</dt>
         <dd><a href="contato@solutibrasil.com.br">contato@solutibrasil.com.br</a></dd>

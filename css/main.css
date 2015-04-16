@@ -290,7 +290,7 @@ ul ul {
 	clear: both;
 	margin: 0 auto;
 	overflow: hidden;
-    padding: 3%;
+    padding: 50px;
     width: 100%;
 }
 .element-invisible {
@@ -419,10 +419,15 @@ ul.actions li.print-icon a {
 }
 @media screen and (max-width: 940px) {
     article,
-    aside {
-        float: none;
+    aside.left,
+    aside.right {
+        display: inline-block;
+        float: none !important;
         padding: 25px 0;
-        width: 98%;
+        width: 100% !important;
+    }
+    footer > a {
+        margin: 50px 0 0;
     }
 	h1 {
         float: left;
@@ -459,7 +464,8 @@ ul.actions li.print-icon a {
 /* Mobile */
 @media only screen and (min-device-width: 320px) and (max-device-width: 736px), only screen and (min-device-width: 768px) and (max-device-width: 1024px), only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     article,
-    aside {
+    aside.left,
+    aside.right {
         float: none;
         padding: 25px 0;
         width: 98%;

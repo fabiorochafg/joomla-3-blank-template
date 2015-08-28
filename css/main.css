@@ -393,26 +393,38 @@ ul.actions li.print-icon a {
 }
 
 /* Media-queries */
-@media print {  
+@media print {
     * {
+        background: transparent !important;
+        color: #000 !important;
         margin: 0 !important;
         padding: 0 !important;
+        text-shadow: none !important;
+    }
+    a,
+    a:visited {
+        text-decoration: underline;
     }
     body {
-        color: #000000;
+        color: #000;
         font: 9pt serif;
+        line-height: 1.4em;
     }
-    a:link, a:visited {
-        color: #333333;
-        text-decoration: none;
+    h1 {
+        width: 100%;
     }
-    footer,
-    h1,
-    nav {
-        display: none !important;
+    h1 a:after {
+        content: "";
     }
-    table {
-        font: 8pt serif;
+    img {
+        max-width: 100%;
+    }
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+    p a {
+        word-wrap: break-word;
     }
 }
 @media screen and (min-width: 1440px) {

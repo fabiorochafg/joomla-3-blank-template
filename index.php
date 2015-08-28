@@ -7,7 +7,7 @@ $menu = $app->getMenu();
 $option = JRequest::GetWord('option');
 
 $doc -> addStyleSheet('templates/' . $this->template . '/css/main.css');
-$doc -> addScript('templates/' . $this->template . '/js/main.js', 'text/javascript');
+$doc -> addScript('templates/' . $this->template . '/js/main.js');
 $showLeftColumn = $this->countModules('left');
 $showRightColumn = $this->countModules('right');
 $classContent = '';
@@ -42,13 +42,13 @@ if ($option != 'com_search') {
 
     <?php if($this->countModules('search')) : ?>
         <div id="search">
-            <jdoc:include type="modules" name="search" style="none" />
+            <jdoc:include type="modules" name="search" />
         </div>
     <?php endif; ?>
 
     <?php if ($this->countModules('menu')) : ?>
         <nav>
-            <jdoc:include type="modules" name="menu" style="none" />
+            <jdoc:include type="modules" name="menu" />
         </nav>
     <?php endif; ?>
 
@@ -61,7 +61,7 @@ if ($option != 'com_search') {
         <?php if($this->countModules('breadcrumbs')) : ?>
             <div id="breadcrumbs">
                 <p>You are in:</p>
-                <jdoc:include type="modules" name="breadcrumbs" style="none" />
+                <jdoc:include type="modules" name="breadcrumbs" />
             </div>
         <?php endif; ?>
 
@@ -72,20 +72,20 @@ if ($option != 'com_search') {
         <?php } ?>
 
         <?php if ($option != 'com_search' && $this->countModules('content')) : ?>
-            <jdoc:include type="modules" name="content" style="xhtml" />
+            <jdoc:include type="modules" name="content" style="html5" />
         <?php endif; ?>
 
     </article>
 
     <?php if ($option != 'com_search' && $this->countModules('left')) : ?>
         <aside class="left">
-            <jdoc:include type="modules" name="left" style="xhtml" />
+            <jdoc:include type="modules" name="left" style="html5" />
         </aside>
     <?php endif; ?>
 
     <?php if ($option != 'com_search' && $this->countModules('right')) : ?>
         <aside class="right">
-            <jdoc:include type="modules" name="right" style="xhtml" />
+            <jdoc:include type="modules" name="right" style="html5" />
         </aside>
     <?php endif; ?>
 
@@ -94,7 +94,7 @@ if ($option != 'com_search') {
 <footer class="container">
 
     <?php if($this->countModules('footer')) : ?>
-        <jdoc:include type="modules" name="footer" style="none" />
+        <jdoc:include type="modules" name="footer" style="html5" />
     <?php endif; ?>
 
     <?php echo '<dl>
@@ -109,7 +109,7 @@ if ($option != 'com_search') {
 
 </footer>
 
-<jdoc:include type="modules" name="debug" style="none" />
+<jdoc:include type="modules" name="debug" />
 
 </body>
 </html>

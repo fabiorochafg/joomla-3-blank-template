@@ -24,7 +24,21 @@ if ($option != 'com_search') {
 <!DOCTYPE html>
 <html lang="<?php echo $this->language; ?>" dir="<?php echo $this->direction; ?>">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:site_name" content="<?php echo $app->getCfg('sitename'); ?>" />
+<meta property="og:type" content="article" />
+<?php
+$article = JTable::getInstance("content"); 
+$article->load(JRequest::getInt("id"));
+$article_images = $article->get("images");
+$pictures = json_decode($article_images);
+$article_title = $article->get("title");
+$article_uri = JFactory::getURI();
+$absolute_url = $article_uri->toString();
+echo '<meta property="og:image" content="'.$pictures->{'image_intro'}.'" />';
+echo '<meta property="og:title" content="'.$article_title.'" />';
+echo '<meta property="og:url" content="'.$absolute_url.'" />';
+?>
 <jdoc:include type="head" />
 </head>
 
